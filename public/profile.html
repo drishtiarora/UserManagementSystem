@@ -1,0 +1,36 @@
+<div class="panel">
+    <div class="panel-heading">
+        <h2>USER DETAILS</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>NAME</th>
+                <th>EMAIl</th>
+                <th>LOCATION</th>
+                <th>CONTACT</th>
+            </tr>
+            <tr>
+                <td>{{userLoginInfo.username}}</td>
+                <td>{{userLoginInfo.email}}</td>
+                <td>{{userLoginInfo.location}}</td>
+                <td>{{userLoginInfo.phone}}</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<h3>UPDATE DETAILS</h3>
+<div class="content">
+    <form name="editProfile" ng-submit="onProfileEdited(myProfile)">
+        <label>Name</label>
+        <input type="textbox" class="form-control" ng-model="myProfile.myName">
+        <label>Email</label>
+        <input type="textbox" class="form-control" ng-model="myProfile.myEmail">
+        <label>Location</label>
+        <input type= "textbox" class="form-control" ng-model="myProfile.myLocation">
+        <label>Phone</label>
+        <input type="textbox" class="form-control" ng-model="myProfile.myPhone">
+        <input type="submit" value="Save">
+    </form>   
+</div>

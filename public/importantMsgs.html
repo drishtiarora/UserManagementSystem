@@ -1,0 +1,20 @@
+<div class="panel">
+    <div class="panel-heading">
+        <h2>My Important Messages</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Msg by</th>
+            </tr>
+            <tr ng-repeat="m in msgData">
+                <td>{{m.title}}</td>
+                <td>{{m.description}}</td>
+                <td>{{m.sender}}</td>
+
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="page-header">
+        <h2>REPLY</h2>
+    </div>
+    
+    <form>
+        <label>REPLY TO</label> <br>
+        <input type = "textbox" ng-model= "reply.replyto" placeholder="name" />
+        <br>
+        
+        <label>Password</label><br>
+        <input type = "textbox" ng-model= "reply.msg" placeholder = "message"/> <br><br>
+        <br>
+    
+        <button type="submit" class="btn btn-primary" ng-click="send(reply)">SEND</button>
+        <br><br>
+        <button type="submit" class="btn btn-primary" ng-click="back()">BACK    </button>
+    </form>

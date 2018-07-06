@@ -1,0 +1,18 @@
+<div class="panel">
+    <div class="panel-heading"> 
+        <h2>REPLIES</h2> 
+        <br><br>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-6 col-md-4">
+                <h4>REPLY TO</h4></div>
+            <div class="col-xs-6 col-md-4">
+               <h5>REPLY MSG</h5> 
+            </div>
+        </div>
+        <div class="row" ng-repeat="reply in replymsgs">
+                <div class="col-xs-6 col-md-4">{{reply.replyFor}}</div>
+                <div class="col-xs-6 col-md-4">{{reply.replyMsg}}</div>
+            </div>
+    </div>

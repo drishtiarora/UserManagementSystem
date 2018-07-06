@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="panel panel-heading">
+        <h2>User SignUp</h2>
+    </div>
+    <div class="panel panel-body">
+
+        <form ng-submit="regUser(regData)">
+            <label>Username:</label>
+            <input type="text" class="form-control" ng-model="regData.username" placeholder="username" name="username">
+            <br>
+
+            <label>Password:</label>
+            <input type="text" class="form-control" ng-model="regData.password" placeholder="password" name="password">
+            <br>
+
+            <label>Email:</label>
+            <input type="text" class="form-control" ng-model="regData.email" placeholder="email" name="email">
+            <br>
+
+            <label>Location:</label>
+            <input type="text" class="form-control" ng-model="regData.location" placeholder="location" name="location">
+            <br>
+
+            <label>Phone Number:</label>
+            <input type="text" class="form-control" ng-model="regData.phone" placeholder="phone" name="phn">
+            <br>
+            <button type="submit" class="btn btn-primary">Register</button>
+
+
+        </form>
+    </div>
+</div>

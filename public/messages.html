@@ -1,0 +1,43 @@
+<div class="panel">
+    <div class="panel panel-heading">
+        <h2>My Messages</h2>
+    </div>
+    <div class="panel panel-body">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>SENDER</th>
+                <th>TITLE</th>
+                <th>DESCRIPTION</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="msg in msgDetails">
+
+                <!-- <td>{{msgDetails}}</td> -->
+                <td>{{msg.sender}}</td>
+                <td>{{msg.title}}</td>
+                <td>{{msg.description}}</td>
+                <td>
+                    <button class="btn btn-primary" ng-click="reply()">REPLY</button>
+
+                </td>
+                <td>
+                    <button class="btn btn-success" ng-click="important(msg)">MARK IMPORTANT</button>
+
+                </td>
+                <td>
+                    <button class="btn btn-danger" ng-click="delete(msg)">DELETE</button>
+                </td>
+                <!-- <td>{{i.sender}}</td> -->
+
+            </tr>
+
+        </table>
+
+        <button class="btn btn-success" ng-click="msgs()">Important Messages</button>
+        <br><br>
+        <button class="btn btn-success" ng-click="repliedmsgs()">Replied Messages</button>
+
+    </div>
+</div>
